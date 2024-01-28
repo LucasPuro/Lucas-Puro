@@ -1,0 +1,68 @@
+<!DOCTYPE html5>
+<html lang="pt">
+<head>
+    <!-- Meta tags para configurações iniciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Lucas Puro</title>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio - Lucas Puro</h1>
+    </header>
+
+    <!-- Barra de navegação com links para seções da página -->
+    <nav>
+        <a href="#sobre-mim" onclick="showSection('sobre-mim')">Sobre mim</a>
+        <a href="#educacao" onclick="showSection('educacao')">Educação</a>
+        <a href="#portfolio" onclick="showSection('portfolio')">Portfolio</a>
+        <a href="#contato" onclick="showSection('contato')">Contato</a>
+    </nav>
+
+    <section id="sobre-mim" class="content">
+        <h2>Sobre mim</h2>
+        <p>Sou formado em Fisioterapia pela Unesp, atualmente cursando Engenharia de Software pela Uninter. Meus hobbies incluem jogos online (tanto jogando como tentando programar), culinária e jardinagem. No tempo livre, gosto de aprender conteúdos novos ou me aprofundar nas áreas que já conheço.</p>
+    </section>
+
+    <section id="educacao" class="content">
+        <h2>Educação</h2>
+        <ul>
+            <li>Atualmente cursando Engenharia de Software pela UNINTER (2022 - 2026).</li>
+            <li>Graduado em Fisioterapia pela FCT – Unesp (2022).</li>
+            <li>Bolsista de Iniciação Científica FAPESP pela FCT – Unesp.</li>
+            <li>Inglês Avançado.</li>
+            <li>Pacote Office Intermediário.</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="content">
+        <h2>Portfolio</h2>
+        <p>No momento ainda não há nada aqui, mas estamos trabalhando nisso.</p>
+    </section>
+
+    <!-- Seção "Contato" com um formulário de contato -->
+    <section id="contato" class="content">
+        <h2>Contato</h2>
+        <!-- Formulário com inputs de nome, email e mensagem -->
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <p><label for="email">Email:</label>
+            <input type="email" id="email" name="email" required></p>
+
+            <p><label for="message">Mensagem:</label></p>
+            <p><textarea id="message" name="message" rows="4" required></textarea></p>
+
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
